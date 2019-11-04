@@ -26,7 +26,7 @@ namespace DatingApp.API.Controllers
             _context = context;
             _logger = logger;
         }
-                
+        [AllowAnonymous]
         [HttpGet] // GET http://localhost:5000/api/values
         public async Task<IActionResult> GetValues()
         {
