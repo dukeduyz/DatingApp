@@ -60,6 +60,9 @@ namespace DatingApp.API
                         ValidateAudience = false
                     };
                 });
+
+            services.AddScoped<LogUserActivity>();
+            
             // MvcOptions.EnableEndpointRouting = false；
         }
 
